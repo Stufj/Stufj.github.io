@@ -3345,7 +3345,7 @@ input, select, textarea {
 			flex-basis: 60%;
 		}
 
-			.panel.banner .content > .actions:last-child {
+			.panel.banner ul.actions {
 				margin-bottom: 1.5rem;
 				display: inline-block;
 			}
