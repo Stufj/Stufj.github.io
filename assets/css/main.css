@@ -1169,20 +1169,13 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			ul.actions {
-				display: inline-block !important;
-
+				display: inline-block;
 			}
 			
 			ul.actions li {
 				margin-bottom: 10px;
-
 			}
 			
-	@media screen and (max-width: 736px) #player {
-
-		width: 100% !important;
-			
-		}
 
 /* Icons */
 
