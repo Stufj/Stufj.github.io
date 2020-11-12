@@ -1165,14 +1165,14 @@ input, select, textarea {
 			ul.actions.fit.stacked {
 				width: 100%;
 			}
-	@media screen and (max-width: 736px) ul.actions {
 
-		margin-bottom: 10px;
-		display: inline-block !important;
-			
-		}
+		@media screen and (max-width: 736px) {
 
+			ul.actions {
+				margin-bottom: 10px;
+				display: inline-block !important;
 
+			}
 
 /* Icons */
 
