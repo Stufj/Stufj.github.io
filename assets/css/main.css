@@ -1165,7 +1165,13 @@ input, select, textarea {
 			ul.actions.fit.stacked {
 				width: 100%;
 			}
+			@media screen and (max-width: 736px) ul.actions {
 
+				margin-bottom: 10px;
+				display: inline-block; !important;
+		
+				}
+			
 /* Icons */
 
 	ul.icons {
@@ -3337,8 +3343,9 @@ input, select, textarea {
 			flex-basis: 60%;
 		}
 
-			.panel.banner .content > .actions:last-child {
+		.panel.banner ul.actions {
 				margin-bottom: 1.5rem;
+				display: inline-block;
 			}
 
 		.panel.banner .image {
@@ -3652,6 +3659,7 @@ input, select, textarea {
 			height: auto;
 			margin: 0 0 5rem 0;
 			box-shadow: 0 0.25rem 1.5rem 0.25rem rgba(46, 43, 55, 0.5);
+			display: inline-grid;
 		}
 
 			#wrapper > .scrollZone {
