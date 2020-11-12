@@ -3339,6 +3339,7 @@ input, select, textarea {
 
 			.panel.banner .content > .actions:last-child {
 				margin-bottom: 1.5rem;
+				display: inline-block;
 			}
 
 		.panel.banner .image {
@@ -3382,6 +3383,18 @@ input, select, textarea {
 		}
 
 	}
+
+	@media screen and (max-width: 736px) ul.actions {
+
+		margin-bottom: 10px;
+			
+		}
+	@media screen and (max-width: 736px) #player {
+
+		width: 100%;
+			
+		}
+
 
 /* Panel (Spotlight) */
 
@@ -3652,6 +3665,8 @@ input, select, textarea {
 			height: auto;
 			margin: 0 0 5rem 0;
 			box-shadow: 0 0.25rem 1.5rem 0.25rem rgba(46, 43, 55, 0.5);
+			display: inline-grid;
+
 		}
 
 			#wrapper > .scrollZone {
