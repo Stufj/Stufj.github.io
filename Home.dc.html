@@ -1,0 +1,670 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico" />
+    <script src="./support.js"></script>
+  </head>
+  <body>
+    <x-dc>
+      <helmet>
+        <title>Christoph Schneider — Portfolio &amp; prototyper</title>
+        <link
+          rel="stylesheet"
+          href="_ds/industry-c3c48955-a39c-4841-81d5-6ea35760e61c/styles.css"
+        />
+        <script src="_ds/industry-c3c48955-a39c-4841-81d5-6ea35760e61c/_ds_bundle.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin=""
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;family=Barlow+Condensed:wght@400;500;600;700&amp;display=swap"
+          rel="stylesheet"
+        />
+        <style>
+          body {
+            margin: 0;
+            background: #fbfaff;
+            font-family: "Barlow", system-ui, sans-serif;
+            color: #241c33;
+          }
+          a {
+            color: #6b4bb8;
+            text-underline-offset: 3px;
+          }
+          a:hover {
+            color: #a29ae8;
+          }
+          * {
+            box-sizing: border-box;
+          }
+        </style>
+      </helmet>
+
+      <div style="max-width: 1440px; margin: 0 auto; background: #fbfaff">
+        <!-- nav -->
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 14px;
+            flex-wrap: wrap;
+            padding: 20px clamp(18px, 4vw, 40px);
+            position: sticky;
+            top: 0;
+            background: #fbfaff;
+            z-index: 30;
+          "
+        >
+          <span
+            style="
+              font-family: &quot;Barlow Condensed&quot;, sans-serif;
+              font-size: 21px;
+              font-weight: 700;
+              letter-spacing: 0.03em;
+            "
+            >CHRISTOPH SCHNEIDER</span
+          >
+          <div style="display: flex; gap: 10px">
+            <a
+              href="#work"
+              style="
+                padding: 7px 15px;
+                background: #a1dcff;
+                color: #241c33;
+                text-decoration: none;
+                font-family: &quot;Barlow Condensed&quot;, sans-serif;
+                font-size: 14px;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+              "
+              style-hover="background: #d6afff;"
+              >Work</a
+            >
+            <a
+              href="#cv"
+              style="
+                padding: 7px 15px;
+                background: #d6afff;
+                color: #241c33;
+                text-decoration: none;
+                font-family: &quot;Barlow Condensed&quot;, sans-serif;
+                font-size: 14px;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+              "
+              style-hover="background: #f5adff;"
+              >CV</a
+            >
+            <a
+              href="#contact"
+              style="
+                padding: 7px 15px;
+                background: #f5adff;
+                color: #241c33;
+                text-decoration: none;
+                font-family: &quot;Barlow Condensed&quot;, sans-serif;
+                font-size: 14px;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+              "
+              style-hover="background: #a29ae8;"
+              >Contact</a
+            >
+          </div>
+        </div>
+
+        <!-- hero -->
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 28px;
+            padding: 24px clamp(18px, 4vw, 40px) 40px;
+            align-items: stretch;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              min-width: 0;
+            "
+          >
+            <div
+              style="
+                font-family: &quot;Barlow Condensed&quot;, sans-serif;
+                font-weight: 700;
+                font-size: clamp(58px, 9.6vw, 138px);
+                line-height: 0.84;
+                letter-spacing: -0.03em;
+                text-transform: uppercase;
+              "
+            >
+              Un-useless<br />things,<br />made<br />on purpose
+            </div>
+            <p
+              style="
+                max-width: 620px;
+                margin: 28px 0 0;
+                font-size: 20px;
+                line-height: 1.5;
+                text-wrap: pretty;
+              "
+            >
+              XR researcher, prototyper and tinkerer in Basel. I work at the
+              intersection of immersive technology, art and participatory
+              design. Asking not just <em>what</em> is possible, but
+              <em>for whom</em> and <em>why</em>.
+            </p>
+            <div
+              style="
+                display: flex;
+                gap: 12px;
+                margin-top: 28px;
+                flex-wrap: wrap;
+              "
+            ></div>
+          </div>
+          <div
+            style="position: relative; background: #f5adff; min-height: 520px"
+          >
+            <x-import
+              component-from-global-scope="dancer-canvas"
+              from="./dancer.js"
+              src="models/dance.glb"
+              mode="wireframe"
+              tone="{{ brainTone }}"
+              style="position: absolute; inset: 0"
+              hint-size="100%,100%"
+            ></x-import>
+            <span
+              style="
+                position: absolute;
+                top: 12px;
+                left: 14px;
+                font-family: ui-monospace, monospace;
+                font-size: 11px;
+                letter-spacing: 0.06em;
+                color: #241c33;
+              "
+              >fig.1 — me, in motion</span
+            >
+            <span
+              style="
+                position: absolute;
+                bottom: 12px;
+                left: 14px;
+                font-family: ui-monospace, monospace;
+                font-size: 11px;
+                letter-spacing: 0.06em;
+                color: #241c33;
+              "
+              >move your mouse; I dance</span
+            >
+          </div>
+        </div>
+
+        <!-- work -->
+        <div
+          id="work"
+          style="
+            padding: 0 clamp(18px, 4vw, 40px) 12px;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+          "
+        >
+          <h2
+            style="
+              margin: 0;
+              font-family: &quot;Barlow Condensed&quot;, sans-serif;
+              font-size: clamp(38px, 6vw, 60px);
+              font-weight: 700;
+              text-transform: uppercase;
+              line-height: 0.95;
+            "
+          >
+            PROJECTS
+          </h2>
+          <span
+            style="
+              font-size: 13px;
+              letter-spacing: 0.16em;
+              text-transform: uppercase;
+              color: #6f6885;
+            "
+            >2018 — today · {{ projectCount }} projects</span
+          >
+        </div>
+        <div
+          style="
+            padding: 20px clamp(18px, 4vw, 40px) 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 18px;
+          "
+        >
+          <sc-for list="{{ projects }}" as="p" hint-placeholder-count="7">
+            <a
+              href="{{ p.href }}"
+              style="position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; min-height: 268px; padding: 22px; background: {{ p.hue }}; color: #241c33; text-decoration: none;"
+              style-hover="filter: brightness(0.94);"
+            >
+              <sc-if value="{{ p.img }}" hint-placeholder-val="{{ true }}">
+                <div
+                  role="img"
+                  aria-label="{{ p.title }}"
+                  style="position: absolute; inset: 0; background-image: url({{ p.img }}); background-size: cover; background-position: center; filter: grayscale(1) contrast(1.15); mix-blend-mode: luminosity; opacity: 0.5;"
+                ></div>
+              </sc-if>
+              <sc-if value="{{ p.slot }}" hint-placeholder-val="{{ true }}">
+                <div
+                  style="
+                    position: absolute;
+                    inset: 0;
+                    background: repeating-linear-gradient(
+                      135deg,
+                      rgba(36, 28, 51, 0.07) 0 10px,
+                      rgba(36, 28, 51, 0) 10px 20px
+                    );
+                  "
+                ></div>
+                <span
+                  style="
+                    position: absolute;
+                    top: 46px;
+                    left: 22px;
+                    right: 22px;
+                    font-family: ui-monospace, monospace;
+                    font-size: 11px;
+                    line-height: 1.5;
+                    color: #241c33;
+                    opacity: 0.75;
+                  "
+                  >{{ p.slot }}</span
+                >
+              </sc-if>
+              <div
+                style="
+                  position: relative;
+                  align-self: flex-start;
+                  display: flex;
+                  gap: 14px;
+                  background: #fbfaff;
+                  padding: 4px 9px;
+                  font-size: 11px;
+                  letter-spacing: 0.16em;
+                  text-transform: uppercase;
+                "
+              >
+                <span>{{ p.no }}</span><span>{{ p.year }}</span>
+              </div>
+              <div
+                style="
+                  position: relative;
+                  background: rgba(251, 250, 255, 0.88);
+                  padding: 14px 15px 15px;
+                  margin: 0 -4px -4px;
+                "
+              >
+                <div
+                  style="
+                    font-family: &quot;Barlow Condensed&quot;, sans-serif;
+                    font-size: 36px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    line-height: 0.98;
+                  "
+                >
+                  {{ p.title }}
+                </div>
+                <p style="font-size: 15px; line-height: 1.45; margin: 9px 0 0">
+                  {{ p.line }}
+                </p>
+                <div
+                  style="
+                    font-size: 11px;
+                    letter-spacing: 0.14em;
+                    text-transform: uppercase;
+                    margin-top: 14px;
+                  "
+                >
+                  {{ p.tools }}
+                </div>
+              </div>
+            </a>
+          </sc-for>
+        </div>
+
+        <!-- cv -->
+        <sc-if value="{{ showCV }}" hint-placeholder-val="{{ true }}">
+          <div
+            id="cv"
+            style="background: #f5adff; padding: 48px clamp(18px, 4vw, 40px)"
+          >
+            <div
+              style="
+                display: flex;
+                align-items: baseline;
+                gap: 16px;
+                margin-bottom: 30px;
+                flex-wrap: wrap;
+              "
+            >
+              <h2
+                style="
+                  margin: 0;
+                  font-family: &quot;Barlow Condensed&quot;, sans-serif;
+                  font-size: clamp(40px, 6.5vw, 68px);
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  line-height: 0.9;
+                "
+              >
+                Curriculum
+              </h2>
+              <span style="font-size: 15px"
+                >design school, a forensics lab, and an axe-throwing bar</span
+              >
+            </div>
+            <div
+              style="
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 40px;
+              "
+            >
+              <div>
+                <div
+                  style="
+                    font-size: 11px;
+                    letter-spacing: 0.18em;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                  "
+                >
+                  Education
+                </div>
+                <sc-for
+                  list="{{ education }}"
+                  as="e"
+                  hint-placeholder-count="4"
+                >
+                  <div
+                    style="
+                      display: grid;
+                      grid-template-columns: 100px 1fr;
+                      gap: 16px;
+                      padding: 12px 0;
+                      border-top: 1px solid #241c33;
+                    "
+                  >
+                    <span
+                      style="
+                        font-family: ui-monospace, monospace;
+                        font-size: 12px;
+                        padding-top: 4px;
+                      "
+                      >{{ e.years }}</span
+                    >
+                    <span
+                      ><span
+                        style="
+                          font-family: &quot;Barlow Condensed&quot;, sans-serif;
+                          font-size: 23px;
+                          font-weight: 600;
+                          display: block;
+                          line-height: 1.15;
+                        "
+                        >{{ e.title }}</span
+                      ><span style="font-size: 15px">{{ e.place }}</span></span
+                    >
+                  </div>
+                </sc-for>
+              </div>
+              <div>
+                <div
+                  style="
+                    font-size: 11px;
+                    letter-spacing: 0.18em;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                  "
+                >
+                  Work
+                </div>
+                <sc-for list="{{ jobs }}" as="j" hint-placeholder-count="5">
+                  <div
+                    style="
+                      display: grid;
+                      grid-template-columns: 100px 1fr;
+                      gap: 16px;
+                      padding: 12px 0;
+                      border-top: 1px solid #241c33;
+                    "
+                  >
+                    <span
+                      style="
+                        font-family: ui-monospace, monospace;
+                        font-size: 12px;
+                        padding-top: 4px;
+                      "
+                      >{{ j.years }}</span
+                    >
+                    <span
+                      ><span
+                        style="
+                          font-family: &quot;Barlow Condensed&quot;, sans-serif;
+                          font-size: 23px;
+                          font-weight: 600;
+                          display: block;
+                          line-height: 1.15;
+                        "
+                        >{{ j.title }}</span
+                      ><span style="font-size: 15px">{{ j.place }}</span></span
+                    >
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+          </div>
+        </sc-if>
+
+        <!-- bottom row -->
+        <div
+          id="contact"
+          style="
+            padding: clamp(20px, 4vw, 40px);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 18px;
+          "
+        >
+          <div style="background: #a1dcff; padding: 24px">
+            <div
+              style="
+                font-size: 11px;
+                letter-spacing: 0.18em;
+                text-transform: uppercase;
+                margin-bottom: 12px;
+              "
+            >
+              Toolbox
+            </div>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap">
+              <sc-for list="{{ skills }}" as="s" hint-placeholder-count="15">
+                <span
+                  style="
+                    padding: 5px 11px;
+                    background: #fbfaff;
+                    font-size: 13px;
+                  "
+                  >{{ s }}</span
+                >
+              </sc-for>
+            </div>
+          </div>
+          <div style="background: #a29ae8; padding: 24px">
+            <div
+              style="
+                font-size: 11px;
+                letter-spacing: 0.18em;
+                text-transform: uppercase;
+                margin-bottom: 12px;
+              "
+            >
+              Languages
+            </div>
+            <div style="font-size: 16px; line-height: 1.7">
+              German — native<br />English — C1, Cambridge First (2018)<br />French
+              — basics
+            </div>
+            <div
+              style="
+                font-size: 11px;
+                letter-spacing: 0.18em;
+                text-transform: uppercase;
+                margin: 22px 0 10px;
+              "
+            >
+              Off the clock
+            </div>
+            <div style="font-size: 16px; line-height: 1.6">
+              Drums · D&amp;D · gaming
+            </div>
+            <div
+              style="
+                font-size: 11px;
+                letter-spacing: 0.18em;
+                text-transform: uppercase;
+                margin: 22px 0 10px;
+              "
+            >
+              Based
+            </div>
+            <div style="font-size: 16px">Basel, Switzerland · b. 1991</div>
+          </div>
+          <div
+            style="
+              background: #241c33;
+              color: #fbfaff;
+              padding: 24px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              gap: 24px;
+            "
+          >
+            <div
+              style="
+                font-family: &quot;Barlow Condensed&quot;, sans-serif;
+                font-size: clamp(34px, 5vw, 54px);
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 0.92;
+              "
+            >
+              Say<br /><span style="color: #f5adff">hello</span>
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                font-size: 16px;
+              "
+            >
+              <a
+                href="mailto:christophpaul.schneider@gmail.com"
+                style="color: #a1dcff; text-decoration: none"
+                >christophpaul.schneider@gmail.com</a
+              >
+              <a
+                href="https://www.linkedin.com/in/christoph-schneider-331474186/"
+                target="_blank"
+                style="color: #a1dcff; text-decoration: none"
+                >LinkedIn</a
+              >
+              <a
+                href="https://un-useless.art/"
+                target="_blank"
+                style="color: #a1dcff; text-decoration: none"
+                >un-useless.art</a
+              >
+              <a
+                href="https://sites.hslu.ch/extended-spaces/"
+                target="_blank"
+                style="color: #a1dcff; text-decoration: none"
+                >Extended Spaces, HSLU</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </x-dc>
+    <script
+      type="text/x-dc"
+      data-dc-script
+      data-props='{"colorway": {"editor": "enum", "options": ["full palette", "pink forward", "cool"], "default": "full palette", "tsType": "string", "section": "Colour"}, "brainTone": {"editor": "color", "options": ["#a1dcff", "#f5adff", "#d6afff", "#241c33"], "default": "#a1dcff", "tsType": "string", "section": "Colour"}, "showCV": {"editor": "boolean", "default": true, "tsType": "boolean", "section": "Sections"}}'
+    >
+      class Component extends DCLogic {
+        renderVals() {
+          const ways = {
+            "full palette": ["#a1dcff", "#f5adff", "#d6afff", "#93aae8", "#a29ae8"],
+            "pink forward": ["#f5adff", "#d6afff", "#f5adff", "#a29ae8", "#d6afff"],
+            "cool": ["#a1dcff", "#93aae8", "#a29ae8", "#a1dcff", "#93aae8"]
+          };
+          const hues = ways[this.props.colorway] || ways["full palette"];
+
+          const raw = [
+            { img: "images/armr/barrieren-dialog-quest3.jpeg", title: "AR/MR Research", line: "Research assistant at Extended Spaces, HSLU — AR/MR prototypes for city planning, public participation and cultural heritage, tested with the people who use them. Includes Achtung Barriere!", tools: "Unity · Blender · Quest 3 · WebAR · Adobe Aero", year: "2022–", href: "AR-MR Research.dc.html" },
+            { img: "images/achtung-barriere/baustelle.jpeg", title: "Achtung Barriere!", line: "Someone else's city, for three minutes: a browser city walk and an MR experience that make invisible barriers impossible to miss. With CORRECTIV.Schweiz and Zentralplus.", tools: "Unity · WebGL · Quest 3 · MR", year: "2024–2025", href: "Achtung Barriere.dc.html" },
+            { img: "images/thesis/mediadock_1.jpeg", title: "Un-Useless Interactions", line: "Master thesis: deliberately impractical interactions with digital media. Chindōgu as a research method, handed on as a workshop.", tools: "Research through design", year: "2025", href: "Un-Useless Interactions.dc.html" },
+            { img: "images/catch/christophcatch_gross.jpg", title: "catch-22", line: "Live performance with Fabio Bissinger — performing, producing visuals and running the technology.", tools: "Performance · Visuals · Bachelor thesis", year: "2021", href: "catch-22.dc.html" },
+            { img: "images/vr-parcours/ducking-foam.jpeg", title: "VR Parcours", line: "A runnable VR course for Hyperwerk's OpenHouse — wooden beams and foam mats under your feet while you walk through another world.", tools: "Unreal Engine 4 · Blender · Quest", year: "2020", href: "VR Parcours.dc.html" },
+            { img: "images/tagging_tentacle/taggin1_gross.jpg", title: "Remote Play Experiments", line: "Three prototypes turning a video call into a physical space: a shared instrument, a four-armed tentacle, and a ball game that dissolves the webcam grid.", tools: "Max/MSP · Arduino · OBS · Scratch", year: "2021", href: "Remote Play Experiments.dc.html" },
+            { img: "VDK/Lampe1_gross.jpg", title: "Virtual Design Kit", line: "Snap sheet-metal parts together in VR; the software generates the flat pattern a local shop laser-cuts and posts back to you.", tools: "VR · Blender · Physical kit", year: "2019", href: "Virtual Design Kit.dc.html" },
+          ];
+          const projects = raw.map((p, i) => ({ ...p, no: String(i + 1).padStart(2, "0"), hue: hues[i % hues.length] }));
+
+          const education = [
+            { years: "2023 – 2026", title: "MA Design: Digital Ideation", place: "HSLU Design Film Kunst, Lucerne" },
+            { years: "2018 – 2021", title: "BA Product & Industrial Design", place: "HyperWerk FHNW, Basel — focus on process design" },
+            { years: "2017 – 2018", title: "BMS Design & Art", place: "Gewerblich-Industrielle Berufsschule Bern" },
+            { years: "2006 – 2009", title: "Chemical Laboratory Technician EFZ", place: "Dept. of Chemistry & Biochemistry, University of Bern" }
+          ];
+
+          const jobs = [
+            { years: "2022 – now", title: "Research Assistant, Visual Narrative (50%)", place: "HSLU Design Film Kunst — AR/MR prototyping in Unity, Adobe Aero and Hoverlay; 3D assets in Blender; workshop design and facilitation; teaching in +Research and Spatial Design" },
+            { years: "2019 – 2023", title: "Blender Coach", place: "ICT Scouts / Campus — coaching teenagers in 3D" },
+            { years: "2019 – 2023", title: "Event Lead", place: "Axt Bude Basel — axe throwing, safety briefings, guests" },
+            { years: "2011 – 2017", title: "Lab Technician, Forensic Molecular Biology", place: "Institute of Forensic Medicine, University of Bern — crime-scene trace analysis, kinship testing, ring trials and validations, key user and department trainer" },
+            { years: "2009 – 2010", title: "Lab Assistant (60%)", place: "Toblerone production centre, Kraft Foods" }
+          ];
+
+          const skills = [
+            "Hybrid-space interaction", "Interactive media", "Prototyping", "Blender", "3D printing",
+            "Unity (XR)", "AI-assisted C#", "Unreal Engine 4 (VR, Blueprints)", "AR/VR/MR",
+            "Adobe CC", "OBS & live streaming", "Max/MSP", "Arduino", "Workshop facilitation", "QGIS"
+          ];
+
+          return {
+            projects, education, jobs, skills,
+            projectCount: projects.length,
+            brainTone: this.props.brainTone ?? "#a1dcff",
+            showCV: this.props.showCV ?? true
+          };
+        }
+      }
+    </script>
+  </body>
+</html>
