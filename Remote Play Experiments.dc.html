@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Remote Play Experiments — Christoph Schneider</title>
+<link rel="stylesheet" href="_ds/industry-c3c48955-a39c-4841-81d5-6ea35760e61c/styles.css">
+<script src="_ds/industry-c3c48955-a39c-4841-81d5-6ea35760e61c/_ds_bundle.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #fbfaff; font-family: "Barlow", system-ui, sans-serif; color: #241c33; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  a { color: #241c33; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+  a:hover { color: #6b4bb8; }
+  :focus-visible { outline: 2px solid #6b4bb8; outline-offset: 3px; }
+  summary::-webkit-details-marker { display: none; }
+  summary { list-style: none; cursor: pointer; }
+  details[open] summary span[data-chev] { transform: rotate(45deg) !important; }
+</style>
+</helmet>
+
+<div style="max-width: 1180px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 56px) 0;">
+
+  <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 0; position: sticky; top: 0; background: #fbfaff; z-index: 30;">
+    <a href="Home.dc.html" style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-family: 'Barlow Condensed', sans-serif; font-size: 15px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; color: #241c33;" style-hover="color: #6b4bb8;">← All work</a>
+    <a href="mailto:christophpaul.schneider@gmail.com" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; background: #f5adff; color: #241c33; text-decoration: none; font-family: 'Barlow Condensed', sans-serif; font-size: 15px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;" style-hover="background: #241c33; color: #fbfaff;">Get in touch</a>
+  </div>
+
+  <div style="padding: clamp(28px, 6vw, 72px) 0 clamp(28px, 5vw, 56px); max-width: 900px;">
+    <div style="font-family: ui-monospace, monospace; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #6f6885; margin-bottom: 20px;">2021 · HyperWerk FHNW · three artefacts</div>
+    <h1 style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: clamp(44px, 9vw, 104px); line-height: 0.85; letter-spacing: -0.03em; text-transform: uppercase;">Remote Play<br>Experiments</h1>
+    <p style="max-width: 30em; margin: 28px 0 0; font-size: clamp(20px, 2.3vw, 26px); line-height: 1.4; font-weight: 300; text-wrap: pretty;">Nobody wanted another meeting tool. So I spent a semester asking <em style="font-style: normal; background: #a29ae8; color: #fbfaff; padding: 0 5px;">what if a video call were a space you could play in</em> — and built three answers.</p>
+  </div>
+
+  <div style="position: relative; aspect-ratio: 16 / 7; background: #a29ae8; margin-bottom: 14px;">
+    <div role="img" aria-label="Tagging Tentacle in use" style="position: absolute; inset: 0; background-image: url(images/tagging_tentacle/taggin1_gross.jpg); background-size: cover; background-position: center;"></div>
+  </div>
+  <p style="margin: 0 0 clamp(40px, 7vw, 88px); font-size: 15px; line-height: 1.5; color: #6f6885; max-width: 44em;">Tagging Tentacle — playing across two rooms and one camera feed.</p>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 2px; background: #ddd6ea; margin-bottom: clamp(40px, 7vw, 88px);">
+    <div style="background: #fbfaff; padding: 20px 20px 22px;">
+      <div style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #6f6885; margin-bottom: 8px;">Role</div>
+      <div style="font-size: 18px; line-height: 1.35;">Concept, electronics, patching and documentation for all three</div>
+    </div>
+    <div style="background: #fbfaff; padding: 20px 20px 22px;">
+      <div style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #6f6885; margin-bottom: 8px;">Constraint</div>
+      <div style="font-size: 18px; line-height: 1.35;">Everyone stays in their own room, and nobody installs anything</div>
+    </div>
+    <div style="background: #fbfaff; padding: 20px 20px 22px;">
+      <div style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #6f6885; margin-bottom: 8px;">Built with</div>
+      <div style="font-size: 18px; line-height: 1.35;">Max/MSP, Arduino, OBS, Scratch, Zoom</div>
+    </div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(28px, 5vw, 72px); align-items: start; margin-bottom: clamp(40px, 7vw, 88px);">
+    <div>
+      <h2 style="margin: 0 0 18px; font-family: 'Barlow Condensed', sans-serif; font-size: 15px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #6f6885;">Why it matters</h2>
+      <p style="margin: 0 0 18px; font-size: 19px; line-height: 1.6; max-width: 34em; text-wrap: pretty;">Remote tools optimise for talking and screen-sharing, which is why remote groups stop being playful. Play needs a shared space and a body in it — both of which a grid of faces removes.</p>
+      <p style="margin: 0; font-size: 19px; line-height: 1.6; max-width: 34em; text-wrap: pretty;">Each prototype smuggles one of them back in using only tools people already had open: a webcam, a browser, a call.</p>
+    </div>
+    <div>
+      <h2 style="margin: 0 0 18px; font-family: 'Barlow Condensed', sans-serif; font-size: 15px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #6f6885;">What came out of it</h2>
+      <div style="display: flex; flex-direction: column;">
+        <div style="border-top: 1px solid #241c33; padding: 14px 0; font-size: 19px; line-height: 1.4;">Three working artefacts, each playable over a standard video call</div>
+        <div style="border-top: 1px solid #241c33; padding: 14px 0; font-size: 19px; line-height: 1.4;">Two of them published — a video and a playable Scratch project</div>
+        <div style="border-top: 1px solid #241c33; border-bottom: 1px solid #241c33; padding: 14px 0; font-size: 19px; line-height: 1.4;">The insight that carried into my thesis: constraints beat features</div>
+      </div>
+    </div>
+  </div>
+
+  <h2 style="margin: 0 0 20px; font-family: 'Barlow Condensed', sans-serif; font-size: clamp(28px, 3.6vw, 40px); font-weight: 700; text-transform: uppercase; line-height: 0.95;">The three</h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px; margin-bottom: clamp(40px, 7vw, 88px);">
+    <figure style="margin: 0;">
+      <div style="aspect-ratio: 4 / 3; background: #a29ae8; position: relative; overflow: hidden;">
+        <div role="img" aria-label="Soundmachine" style="position: absolute; inset: 0; background-image: url(images/soundmachine/soundmachine_gross.jpg); background-size: cover; background-position: center;"></div>
+      </div>
+      <div style="margin-top: 12px; font-family: 'Barlow Condensed', sans-serif; font-size: 24px; font-weight: 600; text-transform: uppercase; line-height: 1;">Soundmachine</div>
+      <figcaption style="margin-top: 8px; font-size: 16px; line-height: 1.5; color: #3d3352;">An instrument that plays across the call, so a group can make noise together without hearing each other in time. <a href="https://www.youtube.com/watch?v=fxWBnGUgwAw" target="_blank" rel="noopener">Watch it</a>.</figcaption>
+    </figure>
+    <figure style="margin: 0;">
+      <div style="aspect-ratio: 4 / 3; background: #a29ae8; position: relative; overflow: hidden;">
+        <div role="img" aria-label="Tagging Tentacle" style="position: absolute; inset: 0; background-image: url(images/tagging_tentacle/taggin1_gross.jpg); background-size: cover; background-position: center;"></div>
+      </div>
+      <div style="margin-top: 12px; font-family: 'Barlow Condensed', sans-serif; font-size: 24px; font-weight: 600; text-transform: uppercase; line-height: 1;">Tagging Tentacle</div>
+      <figcaption style="margin-top: 8px; font-size: 16px; line-height: 1.5; color: #3d3352;">A physical arm that reaches into someone else's camera frame — tag, played between two living rooms.</figcaption>
+    </figure>
+    <figure style="margin: 0;">
+      <div style="aspect-ratio: 4 / 3; background: #a29ae8; position: relative; overflow: hidden;">
+        <div role="img" aria-label="Ballgame" style="position: absolute; inset: 0; background-image: url(images/ballspiel/ballspiel_gross.jpg); background-size: cover; background-position: center;"></div>
+      </div>
+      <div style="margin-top: 12px; font-family: 'Barlow Condensed', sans-serif; font-size: 24px; font-weight: 600; text-transform: uppercase; line-height: 1;">Ballgame</div>
+      <figcaption style="margin-top: 8px; font-size: 16px; line-height: 1.5; color: #3d3352;">A ball thrown between webcam frames, built in Scratch so anyone can open and change it. <a href="https://scratch.mit.edu/projects/498587899" target="_blank" rel="noopener">Play it</a>.</figcaption>
+    </figure>
+  </div>
+
+  <details style="border-top: 2px solid #241c33; margin-bottom: clamp(40px, 7vw, 88px);">
+    <summary style="display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 60px; font-family: 'Barlow Condensed', sans-serif; font-size: clamp(24px, 3vw, 34px); font-weight: 600; text-transform: uppercase;">
+      <span>The long version — the thread, dead ends, what I'd change</span>
+      <span data-chev="1" style="flex: none; width: 15px; height: 15px; border-right: 2px solid #241c33; border-bottom: 2px solid #241c33; transform: rotate(-45deg); transition: transform 180ms ease;"></span>
+    </summary>
+    <div style="padding: 8px 0 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 32px;">
+      <div>
+        <div style="font-family: ui-monospace, monospace; font-size: 12px; color: #6f6885; margin-bottom: 8px;">01 — The thread</div>
+        <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #8b83a6;">[ What you were chasing across the semester, and how each one taught the next. ]</p>
+      </div>
+      <div>
+        <div style="font-family: ui-monospace, monospace; font-size: 12px; color: #6f6885; margin-bottom: 8px;">02 — Making them</div>
+        <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #8b83a6;">[ Latency, cheap electronics, the workaround you're proud of. ]</p>
+      </div>
+      <div>
+        <div style="font-family: ui-monospace, monospace; font-size: 12px; color: #6f6885; margin-bottom: 8px;">03 — What I'd change</div>
+        <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #8b83a6;">[ The honest part. ]</p>
+      </div>
+    </div>
+  </details>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2px; background: #ddd6ea; margin-bottom: clamp(48px, 8vw, 96px);">
+    <a href="Virtual Design Kit.dc.html" style="background: #f5adff; padding: 26px; text-decoration: none; color: #241c33; display: flex; flex-direction: column; gap: 10px; min-height: 128px; justify-content: space-between;" style-hover="background: #241c33; color: #fbfaff;">
+      <span style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;">Next project →</span>
+      <span style="font-family: 'Barlow Condensed', sans-serif; font-size: clamp(28px, 3.4vw, 38px); font-weight: 700; text-transform: uppercase; line-height: 0.95;">Virtual Design Kit</span>
+    </a>
+    <a href="mailto:christophpaul.schneider@gmail.com" style="background: #fbfaff; padding: 26px; text-decoration: none; color: #241c33; display: flex; flex-direction: column; gap: 10px; min-height: 128px; justify-content: space-between;" style-hover="background: #a1dcff;">
+      <span style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #6f6885;">Want the detail?</span>
+      <span style="font-family: 'Barlow Condensed', sans-serif; font-size: clamp(28px, 3.4vw, 38px); font-weight: 700; text-transform: uppercase; line-height: 0.95;">Ask me anything</span>
+    </a>
+  </div>
+</div>
+
+</x-dc>
+</body>
+</html>
